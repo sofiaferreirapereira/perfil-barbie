@@ -1,0 +1,109 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header */
+.header {
+    background-color: rgb(117, 3, 117);
+    color: #fff;
+    display: flex;
+    padding: 15px 80px;
+    justify-content: space-between;
+}   
+.header__button {
+    border: 2px #fff solid;
+    border-radius: 20px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px 25px;
+
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 30px 80px;
+    height: 25vh;
+    border-bottom: 1px #999 solid;
+}
+.profile__image {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+
+/* Friend List */
+.friends {
+    padding: 30px 90px;
+    height: 38vh;
+}
+.friends__title{
+    text-align: center;
+}
+.friends__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px;
+    list-style: none;
+}
+.friends__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.friends__name {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(117, 3, 117);
+    display: flex;
+    padding: 15px 70px;
+    justify-content: space-around;
+}
+.footer__link {
+    color: #fff;
+}
+
+/* Tornando o site responsivo */
+@media screen and (max-width: 600px) {
+    /* Adaptando o header */
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+    }
+
+    .friends__title {
+        margin-bottom: 20px;
+    }
+    .friends {
+        height: 100%;
+    }
+    .friends__list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
